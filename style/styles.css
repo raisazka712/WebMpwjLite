@@ -1,0 +1,372 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    display: inline;
+  }
+
+.main-title{
+    font-size: 20px;
+    padding: 50px;
+    background-color: #000; 
+    text-align: center;
+    color: #F3C867;
+    width: 100%;
+}
+
+nav {
+    background-color: #FDBD55;
+    padding: 5px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+  }
+
+nav ul {
+    padding-inline: 4rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+   
+nav li {
+    list-style-type: none;
+  }
+
+nav a {
+    font-size: 24px;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+  }
+   
+nav a:hover {
+    font-weight: bold;
+  }
+
+  body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+  font-size: 20px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #FDBD55;
+  width: 100px; /* Menentukan lebar dropdown secara eksplisit */
+  z-index: 9999;
+  margin-top: 0px;
+  text-align: center; 
+  padding: 3px; /* Menambahkan padding agar konten terlihat lebih baik */
+  border-radius: 5px; /* Menambahkan border radius */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Menambahkan shadow untuk efek 3D */
+}
+
+.dropdown-menu a {
+  color: white;
+  text-decoration: none;
+  /* margin-top: 0px; */
+  padding: 5px 0; 
+  display: block;
+}
+
+.dropdown-menu li {
+  font-size: 18px;
+  text-align: center; 
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown-menu:hover  {
+  display: block;
+}
+
+.mpwj-logo{
+    height: 400px;
+    width: 400px;
+    margin-top: -50px;    
+}
+
+.backdrop1{
+  height: 400px;
+  width: 800px;
+}
+
+.mc{
+  height: 300px;
+  width: 300px;
+  padding: 6px;
+}
+
+.mc2{
+  height: 350px;
+  width: 350px;
+  padding: 6px;
+}
+
+.judul{
+    display: flex;
+    justify-content: center;
+    margin-top: -30px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+   
+    padding: 20px;
+  }
+
+
+  main {
+    padding: 20px;
+   
+    display: flex;
+    gap: 1.5rem;
+  }
+   
+  #content {
+    flex: 5;
+
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+  }
+
+  .comingsun{
+    height: 600px;
+    width: 600px;
+    padding: 20px;
+  }
+
+  .woro2{
+    height: 600px;
+    width: 600px;
+    padding: 20px;
+  }
+
+  aside {
+    flex: 1;
+
+  }
+
+  .sponsor {
+    text-align: center;
+  }
+  
+  .sponsor2{
+    height: 250px;
+    width: 250px;
+    margin-left: -10px;
+    padding: 3px;
+  }
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #C49542;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  @media screen and (max-width: 1000px) {
+    #content,
+    aside {
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  /* Perangkat dengan lebar layar 1200px dan di bawahnya */
+@media screen and (max-width: 1200px) {
+    main {
+      flex-flow: column nowrap;
+    }
+    main aside {
+      align-self: center;
+    }
+    .backdrop1{
+      height: 350px;
+      width: 600px;
+    }
+    nav a{
+      font-size: 24px;
+    }
+  }
+  /* Perangkat dengan lebar layar 768px dan di bawahnya */
+  @media screen and (max-width: 768px) {
+    nav ul {
+      justify-content: center;
+    }
+    nav a{
+      font-size: 20px;
+    }
+    main aside {
+      align-self: stretch;
+    }
+    .mpwj-logo{
+      height: 350px;
+      width: 350px;
+      margin-top: -50px;    
+    }
+    .judul{
+      font-size: 30px;
+    }
+    .backdrop1{
+      height: 250px;
+      width: 400px;
+    }
+    .woro2{
+      height: 500px;
+      width: 500px;
+      padding: 15px;
+    }
+    .comingsun{
+      height: 500px;
+      width: 500px;
+      padding: 15px;
+    }
+    .mc{
+      height: 250px;
+      width: 250px;
+      padding: 6px;
+    }
+    .mc2{
+      height: 300px;
+      width: 300px;
+      padding: 6px;
+    }
+    p {
+      font-size: 16px;
+    }
+    footer{
+      font-size: 18px;
+    }
+  }
+  /* Perangkat dengan lebar layar 575px dan di bawahnya */
+  @media screen and (max-width: 575px) {
+    .woro2{
+      height: 400px;
+      width: 400px;
+      padding: 15px;
+    }
+    .comingsun{
+      height: 400px;
+      width: 400px;
+      padding: 15px;
+    }
+    nav a{
+      font-size: 18px;
+    }
+    .mpwj-logo{
+      height: 300px;
+      width: 300px;
+      margin-top: -50px;    
+    }
+    .judul{
+      font-size: 26px;
+    }
+    p {
+      font-size: 14px;
+    }
+    footer{
+      font-size: 14px;
+    }
+  }
+/* Perangkat dengan lebar layar 475px dan di bawahnya */
+  @media screen and (max-width: 475px) {
+    .backdrop1{
+      height: 200px;
+      width: 300px;
+    }
+    nav a{
+      font-size: 15px;
+    }
+    nav ul{
+      gap: 1rem;
+    }
+    .mpwj-logo{
+      height: 200px;
+      width: 200px;
+      margin-top: -50px;    
+    }
+    .judul{
+      font-size: 24px;
+    }
+    .mpwj-logo{
+      height: 300px;
+      width: 300px;
+      margin-top: -50px;    
+    }
+    .woro2{
+      height: 300px;
+      width: 300px;
+      padding: 15px;
+    }
+    .comingsun{
+      height: 300px;
+      width: 300px;
+      padding: 15px;
+    }
+    .mc{
+      height: 200px;
+      width: 200px;
+      padding: 5px;
+    }
+    .mc2{
+      height: 250px;
+      width: 250px;
+      padding: 5px;
+    }
+    p {
+      font-size: 12px;
+    }
+    footer{
+      font-size: 12px;
+    }
+  }
+/* Perangkat dengan lebar layar 375px dan di bawahnya */
+@media screen and (max-width: 375px) {
+  .backdrop1{
+    height: 150px;
+    width: 250px;
+  }
+  nav {
+    width: 100%;
+  }
+  nav a{
+    font-size: 12px;
+  }
+  nav ul{
+    gap: 1rem;
+  }
+  .dropdown-menu {
+    width: 75px;
+  }
+  .woro2{
+    height: 250px;
+    width: 250px;
+    padding: 15px;
+  }
+  .comingsun{
+    height: 250px;
+    width: 250px;
+    padding: 15px;
+  }
+  .sponsor2{
+    height: 200px;
+    width: 200px;
+    margin-left: -20px;
+    padding: 2px;
+  }
+}
